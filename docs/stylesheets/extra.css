@@ -1,0 +1,107 @@
+:root {
+  --yarpad-lavender: #eee9ff;
+  --yarpad-purple: #5b3fc4;
+  --yarpad-purple-dark: #452c9d;
+  --yarpad-page: #ffffff;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--yarpad-lavender);
+  --md-primary-fg-color--light: #f6f3ff;
+  --md-primary-fg-color--dark: #ded5ff;
+  --md-accent-fg-color: var(--yarpad-purple);
+  --md-default-bg-color: var(--yarpad-page);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--yarpad-lavender);
+  --md-primary-fg-color--light: #f6f3ff;
+  --md-primary-fg-color--dark: #ded5ff;
+  --md-accent-fg-color: #bcaeff;
+}
+
+/* Keep the compact Material header lavender while retaining all controls. */
+.md-header {
+  background-color: var(--yarpad-lavender);
+  color: var(--yarpad-purple);
+}
+
+.md-header .md-header__button,
+.md-header .md-header__title,
+.md-header .md-header__topic,
+.md-header .md-icon,
+.md-header .md-search__icon {
+  color: var(--yarpad-purple);
+}
+
+.md-header .md-header__button:hover,
+.md-header .md-header__button:focus-visible,
+.md-header .md-search__icon:hover {
+  color: var(--yarpad-purple-dark);
+}
+
+.md-tabs {
+  background-color: var(--yarpad-lavender);
+  color: var(--yarpad-purple);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:focus,
+.md-tabs__link:hover {
+  color: var(--yarpad-purple-dark);
+}
+
+.md-nav__link,
+.md-nav__icon,
+.md-typeset a {
+  color: var(--yarpad-purple);
+}
+
+.md-nav__link:focus,
+.md-nav__link:hover,
+.md-typeset a:focus,
+.md-typeset a:hover {
+  color: var(--yarpad-purple-dark);
+}
+
+.md-main,
+.md-content {
+  background-color: var(--md-default-bg-color);
+}
+
+.yarpad-home {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  margin: clamp(3rem, 12vw, 8rem) auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.yarpad-home__logo {
+  display: block;
+  width: clamp(5rem, 15vw, 7rem);
+  height: auto;
+}
+
+.yarpad-home h1 {
+  margin: 0;
+  color: var(--yarpad-purple-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 44.984375em) {
+  .yarpad-home {
+    margin-top: 3rem;
+  }
+
+  .md-header__title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Respect right-to-left document direction when a future locale needs it. */
+[dir="rtl"] .yarpad-home {
+  text-align: center;
+}
