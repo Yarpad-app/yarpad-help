@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Yarpad</title>
+  <rect width="128" height="128" rx="32" fill="#5b3fc4"/>
+  <path d="M35 34h18l11 22 11-22h18L73 75v20H55V75z" fill="#fff"/>
+</svg>

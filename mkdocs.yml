@@ -1,0 +1,42 @@
+site_name: Yarpad Help Center
+site_url: https://help.yarpad.app/
+site_description: Official help and guidance for Yarpad teachers and students.
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+# The built-in search plugin is the only content plugin. MkDocs also generates
+# sitemap.xml automatically because site_url is configured above.
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+
+extra:
+  generator: false

@@ -1,0 +1,33 @@
+# MkDocs generated site
+/site/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and tooling metadata
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
