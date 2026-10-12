@@ -4,9 +4,18 @@ site_description: Official help and guidance for Yarpad teachers and students.
 docs_dir: docs
 use_directory_urls: true
 
+exclude_docs: |
+  /investigate/
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started/getting-started.md
+
 theme:
   name: material
   language: en
+  logo: assets/images/yarpad-logo.svg
+  favicon: assets/images/yarpad-logo.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -34,9 +43,6 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
-
-nav:
-  - Home: index.md
 
 extra:
   generator: false
