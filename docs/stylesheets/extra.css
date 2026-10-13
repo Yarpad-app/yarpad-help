@@ -69,6 +69,27 @@
   background-color: var(--md-default-bg-color);
 }
 
+/* Generated legal HTML is scoped so it cannot override Material globally. */
+.yarpad-legal-document {
+  max-width: 50rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.yarpad-legal-document h1,
+.yarpad-legal-document h2,
+.yarpad-legal-document h3,
+.yarpad-legal-document h4,
+.yarpad-legal-document h5,
+.yarpad-legal-document h6 {
+  color: var(--md-default-fg-color);
+}
+
+.yarpad-legal-document ul,
+.yarpad-legal-document ol {
+  padding-inline-start: 1.5rem;
+}
+
 .yarpad-home {
   display: grid;
   justify-items: center;

@@ -33,6 +33,24 @@ mkdocs build --strict
 
 The generated files are written to `site/`, which is ignored by Git.
 
+Legal pages are generated into `docs/legal/` during the build and are ignored
+by Git. A deployment fetches the current English Terms of Service and Privacy
+Policy from the public Yarpad API before running MkDocs. If either document is
+unavailable or fails validation, the deployment stops before publishing.
+
+Pull-request validation does not call the production API. To validate the
+legal synchronizer and build locally with the checked-in fixtures, run:
+
+```bash
+python -m unittest discover --start-directory tests --pattern 'test_*.py'
+python scripts/sync_legal_documents.py \
+  --fixture-dir tests/fixtures/legal \
+  --output-dir docs/legal
+mkdocs build --strict
+```
+
+Do not edit or commit the generated Markdown files.
+
 ## Deployment
 
 Push changes to the repository's `main` branch, or start the **Deploy

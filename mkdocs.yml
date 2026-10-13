@@ -12,6 +12,9 @@ nav:
   - Getting Started: getting-started/getting-started.md
   - Teacher Guide:
       - Create and Activate Your Account: teachers/getting-started/create-account.md
+  - Legal:
+      - Terms of Service: legal/terms-of-service.md
+      - Privacy Policy: legal/privacy-policy.md
 
 theme:
   name: material
