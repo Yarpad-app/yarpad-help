@@ -10,6 +10,8 @@ exclude_docs: |
 nav:
   - Home: index.md
   - Getting Started: getting-started/getting-started.md
+  - Teacher Guide:
+      - Create and Activate Your Account: teachers/getting-started/create-account.md
 
 theme:
   name: material
