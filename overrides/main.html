@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  {% if page %}
+    <title>{{ page.meta.seo_title }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page %}
+  {% set seo_title = page.meta.seo_title %}
+  {% set seo_description = page.meta.seo_description %}
+  {% set canonical_url = page.meta.canonical_url %}
+  {% set social_type = page.meta.social_type %}
+  {% set schema_type = page.meta.schema_type %}
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:type" content="{{ social_type }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  {% if config.extra.social_preview_image %}
+    {% set social_image_url = config.site_url.rstrip('/') ~ '/' ~ config.extra.social_preview_image %}
+    <meta property="og:image" content="{{ social_image_url }}">
+    <meta name="twitter:image" content="{{ social_image_url }}">
+  {% endif %}
+  {% if config.extra.google_site_verification %}
+    <meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": {{ schema_type | tojson }},
+    "name": {{ seo_title | tojson }},
+    "description": {{ seo_description | tojson }},
+    "url": {{ canonical_url | tojson }},
+    "inLanguage": "en"
+  }
+  </script>
+  {% endif %}
+{% endblock %}

@@ -380,7 +380,16 @@ def validate_document(spec: DocumentSpec, payload: dict[str, object]) -> LegalDo
 
 
 def render_markdown(document: LegalDocument) -> str:
+    description = (
+        f"Current Yarpad {document.title}, version {document.version}, "
+        f"effective {document.effective_date}."
+    )
     return (
+        "---\n"
+        f"title: {json.dumps(document.title, ensure_ascii=False)}\n"
+        f"description: {json.dumps(description, ensure_ascii=False)}\n"
+        "schema_type: WebPage\n"
+        "---\n\n"
         "<!-- Generated during the documentation build. Do not edit or commit. -->\n"
         f"**Document version:** `{document.version}`  \n"
         f"**Language:** `{document.language}`  \n"
