@@ -29,6 +29,12 @@ Yarpad helps private teachers organize their lessons, students, schedules, and p
 3. Activate your account using the confirmation email.
 4. Sign in to Yarpad.
 
+For the complete teacher registration and activation flow, see [Create and Activate Your Teacher Account](../teachers/getting-started/create-account.md).
+
+!!! important
+
+    Students register through their teacher's registration link, not the teacher registration page.
+
 Teachers can then complete their initial setup, including their profile, working hours, and lesson policies.
 
 ## Need help?

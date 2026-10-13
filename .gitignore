@@ -1,6 +1,9 @@
 # MkDocs generated site
 /site/
 
+# Legal pages generated during build
+/docs/legal/*.md
+
 # Python virtual environments
 .venv/
 venv/

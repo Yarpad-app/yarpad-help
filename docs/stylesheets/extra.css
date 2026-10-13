@@ -69,6 +69,27 @@
   background-color: var(--md-default-bg-color);
 }
 
+/* Generated legal HTML is scoped so it cannot override Material globally. */
+.yarpad-legal-document {
+  max-width: 50rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.yarpad-legal-document h1,
+.yarpad-legal-document h2,
+.yarpad-legal-document h3,
+.yarpad-legal-document h4,
+.yarpad-legal-document h5,
+.yarpad-legal-document h6 {
+  color: var(--md-default-fg-color);
+}
+
+.yarpad-legal-document ul,
+.yarpad-legal-document ol {
+  padding-inline-start: 1.5rem;
+}
+
 .yarpad-home {
   display: grid;
   justify-items: center;
@@ -104,4 +125,29 @@
 /* Respect right-to-left document direction when a future locale needs it. */
 [dir="rtl"] .yarpad-home {
   text-align: center;
+}
+
+/* Left navigation links */
+.md-nav--primary .md-nav__link {
+  color: #424242;
+}
+
+/* Hover */
+.md-nav--primary .md-nav__link:hover {
+  color: #7b1fa2;
+}
+
+/* Active page */
+.md-nav--primary .md-nav__link--active {
+  color: #7b1fa2;
+  font-weight: 600;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link--active {
+  color: #ce93d8;
 }
