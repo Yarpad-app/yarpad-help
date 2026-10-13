@@ -1,3 +1,8 @@
+---
+description: Learn how teachers and students get started with Yarpad, from account creation to lessons and schedules.
+schema_type: WebPage
+---
+
 # Getting Started with Yarpad
 
 Welcome to Yarpad!

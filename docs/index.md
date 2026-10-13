@@ -1,3 +1,8 @@
+---
+description: Official Yarpad help for teachers and students, including account setup and getting started guidance.
+schema_type: WebSite
+---
+
 <section class="yarpad-home" aria-labelledby="yarpad-home-title">
   <img
     class="yarpad-home__logo"

@@ -149,7 +149,11 @@ class LegalSynchronizationTests(unittest.TestCase):
     def test_rendered_page_is_markdown_with_sanitized_html(self):
         document = validate_document(SPECS[1], fixture("policy.json"))
         rendered = render_markdown(document)
-        self.assertTrue(rendered.startswith("<!-- Generated"))
+        self.assertTrue(rendered.startswith("---\ntitle: \"Privacy Policy\""))
+        self.assertIn(
+            'description: "Current Yarpad Privacy Policy, version test-1.0, effective January 15, 2026."',
+            rendered,
+        )
         self.assertIn('<div class="yarpad-legal-document">', rendered)
         self.assertIn("<h2>1. Contact</h2>", rendered)
 

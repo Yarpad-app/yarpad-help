@@ -1,3 +1,8 @@
+---
+description: Follow the complete Yarpad teacher registration, sign-in, account activation, and agreement acceptance steps.
+schema_type: TechArticle
+---
+
 # Create and Activate Your Teacher Account
 
 Follow these steps to register and activate your Yarpad teacher account.

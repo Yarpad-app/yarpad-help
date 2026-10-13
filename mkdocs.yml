@@ -7,17 +7,21 @@ use_directory_urls: true
 exclude_docs: |
   /investigate/
 
+hooks:
+  - scripts/mkdocs_hooks.py
+
 nav:
   - Home: index.md
-  - Getting Started: getting-started/getting-started.md
+  - Getting Started with Yarpad: getting-started/getting-started.md
   - Teacher Guide:
-      - Create and Activate Your Account: teachers/getting-started/create-account.md
+      - Create and Activate Your Teacher Account: teachers/getting-started/create-account.md
   - Legal:
       - Terms of Service: legal/terms-of-service.md
       - Privacy Policy: legal/privacy-policy.md
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: assets/images/yarpad-logo.svg
   favicon: assets/images/yarpad-logo.svg
@@ -51,3 +55,4 @@ extra_css:
 
 extra:
   generator: false
+  google_site_verification: null

@@ -39,5 +39,8 @@ jobs:
       - name: Build documentation
         run: mkdocs build --strict
 
+      - name: Validate SEO artifacts
+        run: python scripts/validate_seo.py --site-dir site
+
       - name: Verify custom domain file
         run: test "$(cat site/CNAME)" = "help.yarpad.app"
