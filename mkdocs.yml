@@ -16,6 +16,7 @@ nav:
   - Teacher Guide:
       - Create and Activate Your Teacher Account: teachers/getting-started/create-account.md
       - Create and Manage Your Teacher Profile: teachers/getting-started/teacher-profile.md
+      - Configure Teacher Working Hours: teachers/getting-started/working-hours.md
   - Legal:
       - Terms of Service: legal/terms-of-service.md
       - Privacy Policy: legal/privacy-policy.md
