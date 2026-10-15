@@ -13,8 +13,11 @@ hooks:
 nav:
   - Home: index.md
   - Getting Started with Yarpad: getting-started/getting-started.md
+  - Student Guide:
+      - Register as a Student: student/register-as-student.md
   - Teacher Guide:
       - Create and Activate Your Teacher Account: teachers/getting-started/create-account.md
+      - Enroll a Student: teachers/getting-started/enroll-student.md
       - Create and Manage Your Teacher Profile: teachers/getting-started/teacher-profile.md
       - Configure Teacher Working Hours: teachers/getting-started/working-hours.md
       - Manage Teacher Unavailable Times: teachers/getting-started/unavailable-times.md
