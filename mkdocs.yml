@@ -18,6 +18,7 @@ nav:
       - Create and Manage Your Teacher Profile: teachers/getting-started/teacher-profile.md
       - Configure Teacher Working Hours: teachers/getting-started/working-hours.md
       - Manage Teacher Unavailable Times: teachers/getting-started/unavailable-times.md
+      - Configure Teacher Policies: teachers/getting-started/teaching-policies.md
   - Legal:
       - Terms of Service: legal/terms-of-service.md
       - Privacy Policy: legal/privacy-policy.md
