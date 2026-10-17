@@ -7,9 +7,8 @@ schema_type: TechArticle
 
 Follow these steps to register and activate your Yarpad teacher account.
 
-!!! important
-
-    Students register through their teacher's registration link, not the teacher registration page.
+**!!! important**
+Students register through their teacher's registration link, not the teacher registration page.
 
 ## Step 1 — Register as a Teacher
 
