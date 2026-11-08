@@ -13,6 +13,8 @@ hooks:
 nav:
   - Home: index.md
   - Getting Started with Yarpad: getting-started/getting-started.md
+  - General Help:
+      - Contact Us: general/contact-us.md
   - Student Guide:
       - Register as a Student: student/register-as-student.md
       - Manage Your Recurring Classes: student/recurring-classes.md
