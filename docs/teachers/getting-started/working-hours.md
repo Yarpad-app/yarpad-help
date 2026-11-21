@@ -1,32 +1,26 @@
 ---
 seo_title: Configure Teacher Working Hours | Yarpad Help Center
-description: Learn how to configure teacher Working Hours, lesson durations, booking availability, and timezone settings in Yarpad.
+description: Learn how teachers configure Working Hours, lesson duration, the first day of the week, and timezone information in Yarpad.
 schema_type: TechArticle
 ---
 
 # Configure Teacher Working Hours
 
-Working Hours define when students can book lessons with you. Yarpad uses one
-working window that repeats every day.
+Working Hours configure one daily working window for your account. You select
+one start time and one total working duration, along with the lesson duration
+and the first day of the week. Availability and booking decisions remain
+controlled by Yarpad's backend rules.
 
 ## Open Working Hours
 
-You can open Working Hours in any of these ways:
+Working Hours is available to teachers only.
 
 ### From Calendar
 
-1. Open the menu.
-2. Expand **Calendar**.
-3. Select **Working hours**.
+1. Open **Calendar**.
+2. Select **Working hours**.
 
-### From Schedule Hub
-
-1. Open **Schedule Hub**.
-2. Open the schedule menu.
-3. Select **Working hours**.
-
-Working Hours opens in a dialog from Schedule Hub. It opens as a full page
-from the Calendar menu.
+This is the exact navigation path: **Calendar → Working hours**.
 
 ### During teacher onboarding
 
@@ -36,115 +30,126 @@ from the Calendar menu.
 Working Hours opens as part of the onboarding sequence. After a successful
 save, onboarding continues to **Teaching policies**.
 
-## Configure Working Hours for the first time
+### From Schedule Hub
 
-Select values for all three fields:
+1. Open **Schedule Hub**.
+2. Open the schedule menu.
+3. Select **Working hours**.
 
-- **Start hour** — the time your daily working window begins.
-- **Working duration** — how long your working window lasts, from 2 to 15
-  hours.
-- **Lesson duration** — the length of each suggested lesson slot, from 15 to
-  120 minutes.
+Working Hours opens in a dialog from Schedule Hub.
 
-Yarpad calculates the end time automatically by adding the Working duration to
-the Start hour. You do not enter the end time separately.
+## Set up Working Hours for the first time
 
-The same working window repeats every day.
+When you create a new configuration, Monday is preselected for **First day of
+week**. You can select another weekday before saving.
 
-### Choose a duration
+Complete these steps:
 
-Working duration is available in one-hour steps from 2 through 15 hours.
-Lesson duration is available in 15-minute steps from 15 minutes through 2
-hours. Lesson duration cannot be longer than Working duration.
+1. Open **Working hours**.
+2. Select **Start hour**.
+3. Select **Working duration**.
+4. Select **Lesson duration**.
+5. Review **First day of week** and select another weekday if needed.
+6. Select **Save**.
 
-## Edit an existing configuration
+All four fields are required. The form cannot be saved when **Lesson duration**
+is longer than **Working duration**.
 
-When you open an existing configuration, Yarpad pre-fills **Start hour**,
-**Working duration**, and **Lesson duration**.
+### Working Hours fields
 
-1. Select the field you want to change.
-2. Choose a new start time or duration.
-3. Select **Save**.
+- **Start hour** — the time your working window begins.
+- **Working duration** — the total length of the working window. Available
+  values are 2 through 15 hours in one-hour steps.
+- **Lesson duration** — the length of a lesson. Available values are 15, 30,
+  45, 60, 75, 90, 105, and 120 minutes.
+- **First day of week** — the day on which your calendar week begins. Available
+  values are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and
+  Sunday.
 
-The same form is used to create and edit Working Hours.
+Yarpad calculates the end of the working window from **Start hour** and
+**Working duration**. The current form uses one start time and one total
+working duration; it does not provide separate hours for individual weekdays
+or multiple daily intervals.
 
-## Save or cancel changes
+## Edit existing Working Hours
 
-- Select **Save** to validate and store the current Working Hours.
-- Select **Cancel** to close Working Hours without saving your changes.
+Reopening Working Hours loads your saved settings. You can edit **Start hour**,
+**Working duration**, **Lesson duration**, and **First day of week**.
 
-After a successful save, the full page or dialog closes. In Schedule Hub, the
-calendar reloads after the dialog closes.
+For an existing configuration, **First day of week** comes from the saved
+configuration. A saved value other than Monday is preserved; existing saved
+configurations do not automatically default to Monday.
 
-## How Working Hours affect booking availability
+1. Open **Working hours**.
+2. Select the field you want to change.
+3. Choose the new value.
+4. Select **Save**.
 
-Working Hours define the daily window used to create available lesson slots.
+The same **Save** action creates a new configuration or updates an existing
+one. After a successful save, the form closes. When Working Hours was opened
+from Schedule Hub, the calendar reloads after the dialog closes.
 
-- Yarpad creates lesson slots using your selected Lesson duration.
-- A lesson slot must fit completely inside the working window.
-- A working window can cross midnight. For example, a window that starts at
-  22:00 and lasts 3 hours ends at 01:00 the next day.
-- **Unavailable Times** remove lesson slots that conflict with them.
-- Existing sessions remove lesson slots that conflict with them.
+## First day of week and calendars
 
-If you have not configured Working Hours, Calendar shows no available lesson
-slots and students cannot book an available slot with you.
+**First day of week** determines where the calendar week begins.
+
+- Teacher Calendar uses the selected day for week display and navigation
+  boundaries.
+- Scheduling views such as **Recurring Classes** also use backend-provided
+  week-start information.
+- Changing **First day of week** changes how weeks are displayed and grouped;
+  it does not move already booked sessions to different times.
+
+The backend remains authoritative for availability, booking decisions, weekly
+policies, and recurrence behavior. A time inside the working window is not
+necessarily bookable.
+
+## If the calendar says Working Hours are required
+
+When Working Hours have not been configured, Calendar displays:
+
+> Working hours must be configured before viewing the calendar.
+
+Select **Configure working hours** to open the Working Hours form. Complete
+the required fields and select **Save**. After a successful configuration, the
+calendar reloads.
 
 ## Timezone information
 
-Working Hours use your configured teacher timezone. This timezone determines
-how your working window and booking availability are interpreted.
-
-If your configured timezone differs from your device timezone, Working Hours
-shows a **Timezone information** card with:
-
-- **Your timezone** — the timezone configured for your Yarpad account.
-- **Device timezone** — the timezone detected on your device.
-
-Select **Change timezone** on the card to open the timezone settings page.
-After changing your timezone, review the displayed Start hour and calculated
-working window. If the times are not correct for your new timezone, update and
-resave Working Hours.
-
-Changing your timezone does not promise to preserve the same local working
-hours. Review your Working Hours after a timezone change whenever your booking
-availability needs to remain at specific local times.
+Working Hours uses your configured account timezone. A **Timezone information**
+notice may appear when your account timezone differs from your device timezone.
+The notice identifies the configured account timezone and the device timezone.
 
 ## Troubleshooting
 
 ### A required-field message appears
 
-Select values for **Start hour**, **Working duration**, and **Lesson duration**.
-All three fields are required before Yarpad can save Working Hours.
+Select values for all four fields:
+
+- **Start hour** must be selected and valid.
+- **Working duration** must be selected and valid.
+- **Lesson duration** must be selected and valid.
+- **First day of week** must be selected.
 
 ### Lesson duration exceeds working duration
 
-Choose a shorter Lesson duration or a longer Working duration. A lesson must
-fit inside the working window, so Lesson duration cannot be longer than
-Working duration.
+Choose a shorter **Lesson duration** or a longer **Working duration**. Lesson
+duration cannot exceed the total working duration.
 
-### Working Hours are missing
+### Working Hours are missing from Calendar
 
-Open Working Hours from **Calendar**, **Schedule Hub**, or the onboarding step.
-Select Start hour, Working duration, and Lesson duration, then select
-**Save**. Until Working Hours are configured, Calendar does not show available
-lesson slots for students.
-
-### The timezone is different from the device timezone
-
-Read the **Timezone information** card. If the configured timezone is wrong,
-select **Change timezone** and update it. Then review the Working Hours start
-and end times and resave Working Hours if necessary.
-
-Do not assume that changing the timezone keeps the same local working window.
+Select **Configure working hours**, complete the form, and select **Save**.
+The calendar reloads after the configuration is saved successfully.
 
 ### Working Hours are still loading
 
 Wait for the Working Hours form to finish loading. If it does not load, close
-and reopen Working Hours and try again.
+and reopen Working Hours and try again. If the problem continues, retry later
+or contact support with the message shown by Yarpad.
 
 ### Saving fails
 
-Check that all required fields are selected and that Lesson duration does not
-exceed Working duration. Try saving again. If the error continues, retry later
-or contact support with the message shown by Yarpad.
+Check that all required fields are selected, that each value is valid, and that
+**Lesson duration** does not exceed **Working duration**. Try saving again. If
+the error continues, retry later or contact support with the message shown by
+Yarpad.
